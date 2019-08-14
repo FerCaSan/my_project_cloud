@@ -1,0 +1,20 @@
+<div class="col">
+	<figure class="figure">
+	  	<img src="https://cdn.icon-icons.com/icons2/1863/PNG/128/event-available_119182.png" class="figure-img img-fluid rounded">
+		  <figcaption class="figure-caption">
+		  	<%= event.name %> <br>
+			<%= event.category %><br>
+			<%= event.place %><br>
+			<%= event.address %><br>
+			<%= event.date_start %><br>
+			<%= event.date_end %><br>
+			<%= event.type_event %><br> 
+			<%= link_to 'Edit', edit_event_path(event) %>
+				<%= link_to 'Destroy', event, method: :delete, data: { confirm: '¿Are you sure?'} %> 
+				 <br><br>
+		</figcaption>
+	</figure>
+</div>
+
+	
+	

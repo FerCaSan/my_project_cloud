@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  category: MyString
+  place: MyString
+  address: MyString
+  date_start: 2019-08-07 13:35:56
+  date_end: 2019-08-07 13:35:56
+  type: 
+  email: MyString
+
+two:
+  name: MyString
+  category: MyString
+  place: MyString
+  address: MyString
+  date_start: 2019-08-07 13:35:56
+  date_end: 2019-08-07 13:35:56
+  type: 
+  email: MyString
