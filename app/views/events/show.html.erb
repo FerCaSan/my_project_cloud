@@ -1,8 +1,44 @@
-<%= @event.name %><br><br>
-<%= @event.category %><br><br>
-<%= @event.place %><br><br>
-<%= @event.address %><br><br>
-<%= @event.date_start %><br><br>
-<%= @event.date_end %><br><br>
-<%= @event.type_event %><br><br>
+<div class="index">
+	<h1>Your event</h1>	
+</div>
+
+<div class="container">
+	<table class="table mb-5">
+		<thead class="mdb-color darken-3">
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Category</th>
+				<th scope="col">Place</th>
+				<th scope="col">Adress</th>
+				<th scope="col">Start</th>
+				<th scope="col">End</th>
+				<th scope="col">Type</th>
+			</tr>
+
+		</thead>
+		<tbody>
+			<tr>
+				<td><%= @event.name %></td>	
+				<td>
+					<%= @event.category %>
+				</td>
+				<td>
+					<%= @event.place %>
+				</td>
+				<td>
+					<%= @event.address %>
+				</td>
+				<td>
+					<%= @event.date_start %>
+				</td>					
+				<td>
+					<%= @event.date_end %>
+				</td>	
+				<td>
+					<%= @event.type_event %>
+				</td>	
+			</tr>
+		</tbody>
+	</table>
+</div>
 

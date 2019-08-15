@@ -1,9 +1,12 @@
 <% if user_signed_in? %>
+	
 	<h1>Event Management of <%= current_user.email %> </h1>
 	<h1></h1><br><br>
 
 		<div class="row">
-			<%=link_to 'Create Event', new_event_path %>
+			<div class="col-4">
+				<%=link_to 'Create Event', new_event_path %>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-4">
@@ -13,7 +16,7 @@
 				<div>
 					<ul class="nav">
 						<li>
-							<p><strong><%= @events.count %></strong> events created 
+							<p><strong><%= @events.count %></strong> Events created 
 							</p>
 						</li>
 					</ul>
@@ -26,6 +29,9 @@
 		</div>
 		<%= will_paginate @events %>
 <% else %>
-	<h1>PageEvents</h1>
+	<div class="index">
+		<h1>Welcome to PageEvents</h1>
+	</div>
+	
 <% end -%>
 

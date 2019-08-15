@@ -12,7 +12,7 @@ class EventsController < ApplicationController
 	end
 
 	def create
-		#render plain: params[:event].inspect
+		
 		@event = current_user.events.new event_params
 
 		if @event.save
